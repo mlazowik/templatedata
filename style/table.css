@@ -1,0 +1,123 @@
+.table-editable td.editor,
+.table-editable tbody tr:nth-child(odd) td.editor {
+  background-color: rgba(82, 168, 236, 0.1);
+  outline: 1px solid rgba(82, 168, 236, 0.8);
+  outline-offset: -1px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition-duration: 200ms;
+     -moz-transition-duration: 200ms;
+       -o-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-property: width, outline, background-color;
+     -moz-transition-property: width, outline, background-color;
+       -o-transition-property: width, outline, background-color;
+          transition-property: width, outline, background-color;
+  -webkit-transition-timing-function: ease-in-out;
+     -moz-transition-timing-function: ease-in-out;
+       -o-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.table-editable td.editor input[type=text] {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+}
+
+.table-editable td.error,
+.table-editable tbody tr:nth-child(odd) td.error {
+  background-color: rgba(255, 210, 77, 0.1);
+  outline: 1px solid #ffd24d;
+}
+
+.table-editable td.editor :focus,
+.table-editable th.editor :focus {
+  outline: 0;
+}
+
+.table-editable .string-cell,
+.table-editable .uri-cell,
+.table-editable .email-cell,
+.table-editable .string-cell.editor input[type=text],
+.table-editable .uri-cell.editor input[type=text],
+.table-editable .email-cell.editor input[type=text] {
+  text-align: left;
+}
+
+.table-editable .date-cell,
+.table-editable .time-cell,
+.table-editable .datetime-cell,
+.table-editable .number-cell,
+.table-editable .integer-cell,
+.table-editable .date-cell.editor input[type=text],
+.table-editable .time-cell.editor input[type=text],
+.table-editable .datetime-cell.editor input[type=text],
+.table-editable .number-cell.editor input[type=text],
+.table-editable .integer-cell.editor input[type=text] {
+  text-align: right;
+}
+
+.table-editable .boolean-cell,
+.table-editable .boolean-cell.editor input[type=checkbox] {
+  text-align: center;
+}
+
+.table-editable .select-cell {
+  text-align: center;
+}
+
+.table-editable .select-cell.editor {
+  padding: 0;
+}
+
+.table-editable .select-cell.editor select {
+  display: block;
+  width: 100%;
+  height: 28px;
+  padding: 4px 5px;
+  margin: 0;
+  line-height: 28px;
+  vertical-align: middle;
+  background-color: white;
+  border: 0;
+  outline: 0;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.table-editable .select-cell.editor :focus {
+  border: 0;
+  outline: 0;
+}
+
+.table-editable .select-cell.editor select::-moz-focus-inner,
+.table-editable .select-cell.editor optgroup::-moz-focus-inner,
+.table-editable .select-cell.editor option::-moz-focus-inner,
+.table-editable .select-cell.editor select::-o-focus-inner,
+.table-editable .select-cell.editor optgroup::-o-focus-inner,
+.table-editable .select-cell.editor option::-o-focus-inner {
+  border: 0;
+}
+
+.table-editable hr {
+  margin: 10px 0;
+}

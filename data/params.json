@@ -1,0 +1,6 @@
+[
+{"label": "Nazwa okrętu", "param": "nazwa\n1", "desc": "nazwa okrętu", "type": "string", "default": "", "required": true},
+{"label": "grafika", "param": "grafika\n2", "desc": "nazwa pliku z Wikimedia Commons", "type": "string", "default": "", "required": false},
+{"label": "podpis grafiki", "param": "podpis grafiki", "desc": "podpis grafiki", "type": "string", "default": "", "required": false},
+{"label": "klasa", "param": "klasa", "desc": "klasa okrętów", "type": "string", "default": "", "required": false}
+]
