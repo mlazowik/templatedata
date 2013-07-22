@@ -37,7 +37,7 @@ $page = 'templatedata';
 		<footer class="footer">
 			<div class="container narrow row-fluid">
 				<div class="span12">
-					<p>Stworzone przez <a target="_blank" href="https://pl.wikipedia.org/wiki/Wikipedysta:Lazowik">mlazowik</a> za pomocą:</p>
+					<p>Stworzone (<a target="_blank" href="https://github.com/mlazowik/templatedata">github</a>) przez <a target="_blank" href="https://pl.wikipedia.org/wiki/Wikipedysta:Lazowik">mlazowik</a> za pomocą:</p>
 					<a target="_blank" href="http://backgridjs.com/">Backgrid.js</a>
 					· <a target="_blank" href="http://twitter.github.io/bootstrap/">Bootstrap</a>
 					· <a target="_blank" href="http://jquery.com/">jQuery</a>
