@@ -3,7 +3,8 @@ TemplateData Generator
 
 It's *really* dirty inside, at least for now.
 
-Uses:
+Uses
+----
  - [backgrid.js](http://backgridjs.com)
  - [bootstrap](http://twitter.github.io/bootstrap/)
  - their dependiences
