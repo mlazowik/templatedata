@@ -137,7 +137,7 @@ Backgrid.AliasesCell = Backgrid.Extension.TextCell.extend({
 		var that = this;
 		$.each(names, function(index, value) {
 			if ( value != "" )
-				that.$el.append($('<code/>').append($('<div/>').text(value)));
+				that.$el.append($('<code/>').text(value), ' ');
 			if (hr) {
 				that.$el.append("<hr />");
 				hr = false;
