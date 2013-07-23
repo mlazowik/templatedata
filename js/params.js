@@ -137,7 +137,7 @@ Backgrid.AliasesCell = Backgrid.Extension.TextCell.extend({
 		var that = this;
 		$.each(names, function(index, value) {
 			if ( value != "" )
-				that.$el.append("<code>" + $('<div/>').text(value).html() + "</code> ");
+				that.$el.append($('<code/>').append($('<div/>').text(value)));
 			if (hr) {
 				that.$el.append("<hr />");
 				hr = false;
@@ -381,7 +381,7 @@ function templatedata($collection, $description) {
 
 	data["params"] = params;
 
-	$("[id='templatedata']").html( JSON.stringify( data, null, "\t" ) );
+	$("[id='templatedata']").text( JSON.stringify( data, null, "\t" ) );
 }
 
 $(document).ready( function() {
