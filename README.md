@@ -3,6 +3,11 @@ TemplateData Generator
 
 It's *really* dirty inside, at least for now.
 
+Also index.php includes files with site-wide
+header and js (including bootstrap) which are
+not included in this repo, so you'll have to
+adjust that.
+
 Uses
 ----
  - [backgrid.js](http://backgridjs.com)
