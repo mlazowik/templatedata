@@ -49,7 +49,7 @@ var span6 = Backgrid.HeaderCell.extend({
 		this.delegateEvents();
 		return this;
 	}
-})
+});
 
 var span1 = Backgrid.HeaderCell.extend({
 	tagName: "th class=\"span1\"",
@@ -60,7 +60,7 @@ var span1 = Backgrid.HeaderCell.extend({
 		this.delegateEvents();
 		return this;
 	}
-})
+});
 
 var hidden = Backgrid.HeaderCell.extend({
 	tagName: "th style=\"display: none\"",
@@ -127,7 +127,7 @@ Backgrid.AliasesEditor = Backgrid.Extension.TextareaEditor.extend({
 		else if (e.type != "hide")
 			this.$el.modal("hide");
 	}
-})
+});
 
 Backgrid.AliasesCell = Backgrid.Extension.TextCell.extend({
 	render: function() {
@@ -147,7 +147,7 @@ Backgrid.AliasesCell = Backgrid.Extension.TextCell.extend({
 		return this;
 	},
 	editor: Backgrid.AliasesEditor
-})
+});
 
 Backgrid.EmEmptyCell = Backgrid.StringCell.extend({
 	render: function() {
@@ -161,7 +161,7 @@ Backgrid.EmEmptyCell = Backgrid.StringCell.extend({
 		this.delegateEvents();
 		return this;
 	}
-})
+});
 
 Backgrid.EmUnknownCell = Backgrid.SelectCell.extend({
 	render: function () {
@@ -225,13 +225,13 @@ Backgrid.EmUnknownCell = Backgrid.SelectCell.extend({
 		["użytkownik", "string/wiki-user-name"],
 		["strona", "string/wiki-page-name"]
 	]
-})
+});
 
 Backgrid.HoverBoolCell = Backgrid.BooleanCell.extend({
 	events: {
 		"mouseenter": "enterEditMode"
 	}
-})
+});
 
 var columns = [{
 	name: "label",
@@ -343,7 +343,7 @@ function deleteRow (event) {
 
 /* on description edit */
 $("#desc").keyup( function() {
-	templatedata(params, $(this).val())
+	templatedata(params, $(this).val());
 } );
 
 /* create templatedata json */
