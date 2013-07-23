@@ -244,7 +244,7 @@ var columns = [{
 	label: "Nazwa",
 	cell: "aliases",
 	sortable: false,
-	headerCell: hidden,
+	headerCell: hidden
 }, {
 	name: "desc",
 	label: "Opis",
@@ -357,7 +357,7 @@ function templatedata($collection, $description) {
 			label: mParam.get("label"),
 			type: mParam.get("type"),
 			required: mParam.get("required"),
-			description: mParam.get("desc"),
+			description: mParam.get("desc")
 		};
 
 		if (mParam.get("default") != "")
