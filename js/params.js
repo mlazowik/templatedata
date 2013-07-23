@@ -226,6 +226,12 @@ Backgrid.EmUnknownCell = Backgrid.SelectCell.extend({
   	]
 })
 
+Backgrid.HoverBoolCell = Backgrid.BooleanCell.extend({
+	events: {
+		"mouseenter": "enterEditMode"
+	}
+})
+
 var columns = [{
   name: "label",
   label: "Parametr",
@@ -259,7 +265,7 @@ var columns = [{
 }, {
   name: "required",
   label: "Wymagany",
-  cell: "boolean",
+  cell: "hoverBool",
   sortable: false,
   headerCell: span1
 }, {
