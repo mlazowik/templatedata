@@ -1,14 +1,14 @@
 //var Param = Backbone.Model.extend({});
 
 var Param = Backbone.Model.extend({
-  initialize: function () {
-    Backbone.Model.prototype.initialize.apply(this, arguments);
-    this.on("change", function (model, options) {
-    	templatedata(params, $("#desc").val());
-    	if (options && options.save === false) return;
-    	model.save();
-    });
-  }
+	initialize: function () {
+		Backbone.Model.prototype.initialize.apply(this, arguments);
+		this.on("change", function (model, options) {
+			templatedata(params, $("#desc").val());
+			if (options && options.save === false) return;
+			model.save();
+		});
+	}
 });
 
 var Params = Backbone.Collection.extend({
@@ -21,56 +21,56 @@ var params = new Params();
 var colspan2span2 = Backgrid.HeaderCell.extend({
 	tagName: "th colspan=\"2\" class=\"span2\"",
 	render: function () {
-	    this.$el.empty();
-	    var $label = this.column.get("label");
-	    this.$el.text($label);
-	    this.delegateEvents();
-	    return this;
-	  }
+		this.$el.empty();
+		var $label = this.column.get("label");
+		this.$el.text($label);
+		this.delegateEvents();
+		return this;
+	}
 });
 
 var colspan2span1 = Backgrid.HeaderCell.extend({
 	tagName: "th colspan=\"2\" class=\"span1\"",
 	render: function () {
-	    this.$el.empty();
-	    var $label = this.column.get("label");
-	    this.$el.text($label);
-	    this.delegateEvents();
-	    return this;
-	  }
+		this.$el.empty();
+		var $label = this.column.get("label");
+		this.$el.text($label);
+		this.delegateEvents();
+		return this;
+	}
 });
 
 var span6 = Backgrid.HeaderCell.extend({
 	tagName: "th class=\"span6\"",
 	render: function () {
-	    this.$el.empty();
-	    var $label = this.column.get("label");
-	    this.$el.text($label);
-	    this.delegateEvents();
-	    return this;
-	  }
+		this.$el.empty();
+		var $label = this.column.get("label");
+		this.$el.text($label);
+		this.delegateEvents();
+		return this;
+	}
 })
 
 var span1 = Backgrid.HeaderCell.extend({
 	tagName: "th class=\"span1\"",
 	render: function () {
-	    this.$el.empty();
-	    var $label = this.column.get("label");
-	    this.$el.text($label);
-	    this.delegateEvents();
-	    return this;
-	  }
+		this.$el.empty();
+		var $label = this.column.get("label");
+		this.$el.text($label);
+		this.delegateEvents();
+		return this;
+	}
 })
 
 var hidden = Backgrid.HeaderCell.extend({
 	tagName: "th style=\"display: none\"",
 	render: function () {
-	    this.$el.empty();
-	    var $label = this.column.get("label");
-	    this.$el.text($label);
-	    this.delegateEvents();
-	    return this;
-	  }
+		this.$el.empty();
+		var $label = this.column.get("label");
+		this.$el.text($label);
+		this.delegateEvents();
+		return this;
+	}
 });
 
 Backgrid.DuplicateCell = Backgrid.Cell.extend({
@@ -86,7 +86,7 @@ Backgrid.DuplicateCell = Backgrid.Cell.extend({
 
 Backgrid.RemoveCell = Backgrid.Cell.extend({
 	render: function() {
-		this.$el.empty();	
+		this.$el.empty();
 		this.$el.html('<button class="btn btn-small btn-danger">Usuń</button>');
 		this.$el.find(":button").click({cid: this.model.cid}, deleteRow);
 		this.delegateEvents();
@@ -98,34 +98,35 @@ Backgrid.AliasesEditor = Backgrid.Extension.TextareaEditor.extend({
 	template: _.template('<form><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h3>Nazwa <small>/ aliasy</small></h3></div><div class="modal-body"><div class="well">Podaj nazwy parametru w oddzielnych liniach. Pierwsza będzie podstawową, pozostałe aliasami</div><textarea class="input-block-level" rows="<%= rows %>"><%- content %></textarea></div><div class="modal-footer"><button class="btn" data-dismiss="modal">Anuluj</button><input class="btn btn-primary" type="submit" value="Zapisz"/></div></form>'),
 	rows: 5,
 	saveOrCancel: function (e) {
-	      if (e && e.type == "submit") {
-	      	e.preventDefault();
-	      	e.stopPropagation();
-	      }
+		if (e && e.type == "submit") {
+			e.preventDefault();
+			e.stopPropagation();
+		}
 
-	      var model = this.model;
-	      var column = this.column;
-	      var val = this.$el.find("textarea").val();
-	      var newValue = this.formatter.toRaw(val);
+		var model = this.model;
+		var column = this.column;
+		var val = this.$el.find("textarea").val();
+		var newValue = this.formatter.toRaw(val);
 
-	      if (_.isUndefined(newValue)) {
-	        model.trigger("backgrid:error", model, column, val);
+		if (_.isUndefined(newValue)) {
+			model.trigger("backgrid:error", model, column, val);
 
-	        if (e) {
-	          e.preventDefault();
-	          e.stopPropagation();
-	        }
-	      }
-	      else if (!e || e.type == "submit" ||
-	               (e.type == "hide" &&
-	                newValue !== (this.model.get(this.column.get("name")) || '').replace(/\r/g, '') &&
-	                window.confirm("Czy chcesz zapisać zmiany?"))) {
-
-	        model.set(column.get("name"), newValue);
-	        this.$el.modal("hide");
-	      }
-	      else if (e.type != "hide") this.$el.modal("hide");
-	    }
+			if (e) {
+				e.preventDefault();
+				e.stopPropagation();
+			}
+		}
+		else if (!e || e.type == "submit" ||
+			(e.type == "hide" &&
+				newValue !== (this.model.get(this.column.get("name")) || '').replace(/\r/g, '') &&
+				window.confirm("Czy chcesz zapisać zmiany?"))
+		) {
+			model.set(column.get("name"), newValue);
+			this.$el.modal("hide");
+		}
+		else if (e.type != "hide")
+			this.$el.modal("hide");
+	}
 })
 
 Backgrid.AliasesCell = Backgrid.Extension.TextCell.extend({
@@ -218,12 +219,12 @@ Backgrid.EmUnknownCell = Backgrid.SelectCell.extend({
 		return this;
 	},
 	optionValues: [
-  		["nieokreślony", "unknown"],
-  		["liczba", "number"],
-  		["tekst", "string"],
-  		["użytkownik", "string/wiki-user-name"],
-  		["strona", "string/wiki-page-name"]
-  	]
+		["nieokreślony", "unknown"],
+		["liczba", "number"],
+		["tekst", "string"],
+		["użytkownik", "string/wiki-user-name"],
+		["strona", "string/wiki-page-name"]
+	]
 })
 
 Backgrid.HoverBoolCell = Backgrid.BooleanCell.extend({
@@ -233,73 +234,73 @@ Backgrid.HoverBoolCell = Backgrid.BooleanCell.extend({
 })
 
 var columns = [{
-  name: "label",
-  label: "Parametr",
-  cell: "string",
-  sortable: false,
-  headerCell: colspan2span2
+	name: "label",
+	label: "Parametr",
+	cell: "string",
+	sortable: false,
+	headerCell: colspan2span2
 }, {
-  name: "param",
-  label: "Nazwa",
-  cell: "aliases",
-  sortable: false,
-  headerCell: hidden,
+	name: "param",
+	label: "Nazwa",
+	cell: "aliases",
+	sortable: false,
+	headerCell: hidden,
 }, {
-  name: "desc",
-  label: "Opis",
-  cell: "string",
-  sortable: false,
-  headerCell: span6
+	name: "desc",
+	label: "Opis",
+	cell: "string",
+	sortable: false,
+	headerCell: span6
 }, {
-  name: "type",
-  label: "Typ",
-  cell: "emUnknown",
-  sortable: false,
-  headerCell: span1
+	name: "type",
+	label: "Typ",
+	cell: "emUnknown",
+	sortable: false,
+	headerCell: span1
 }, {
-  name: "default",
-  label: "Domyślnie",
-  cell: "emEmpty",
-  sortable: false,
-  headerCell: span1
+	name: "default",
+	label: "Domyślnie",
+	cell: "emEmpty",
+	sortable: false,
+	headerCell: span1
 }, {
-  name: "required",
-  label: "Wymagany",
-  cell: "hoverBool",
-  sortable: false,
-  headerCell: span1
+	name: "required",
+	label: "Wymagany",
+	cell: "hoverBool",
+	sortable: false,
+	headerCell: span1
 }, {
-  name: "dup",
-  label: "Akcje",
-  cell: "duplicate",
-  sortable: false,
-  editable: false,
-  headerCell: colspan2span1
+	name: "dup",
+	label: "Akcje",
+	cell: "duplicate",
+	sortable: false,
+	editable: false,
+	headerCell: colspan2span1
 }, {
-  name: "remove",
-  label: "Usuń",
-  cell: "remove",
-  sortable: false,
-  editable: false,
-  headerCell: hidden
+	name: "remove",
+	label: "Usuń",
+	cell: "remove",
+	sortable: false,
+	editable: false,
+	headerCell: hidden
 }];
 
 var AddFooter = Backgrid.Footer.extend({
-  render: function () {
-  	this.$el.empty();
-    this.$el.html('<tr><td colspan="8"><button class="btn btn-primary">Dodaj</button></td></tr>');
-    this.$el.find(":button").click(addRow);
-    this.delegateEvents();
-    return this;
-  }
+	render: function () {
+		this.$el.empty();
+		this.$el.html('<tr><td colspan="8"><button class="btn btn-primary">Dodaj</button></td></tr>');
+		this.$el.find(":button").click(addRow);
+		this.delegateEvents();
+		return this;
+	}
 });
 
 // Initialize a new Grid instance
 var grid = new Backgrid.Grid({
-  columns: columns,
-  collection: params,
-  className: "table table-hover table-bordered table-editable",
-  footer: AddFooter
+	columns: columns,
+	collection: params,
+	className: "table table-hover table-bordered table-editable",
+	footer: AddFooter
 });
 
 // Render the grid and attach the root to your HTML document
