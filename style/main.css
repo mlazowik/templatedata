@@ -12,3 +12,12 @@ textarea.input-block-level {
 	border-top: 1px solid #e5e5e5;
 	background-color: #f5f5f5;
 }
+
+#lang-select {
+	margin-bottom: 0;
+}
+
+.translate-help {
+	text-align: center;
+	margin-top: 0;
+}

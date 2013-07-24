@@ -22,10 +22,13 @@ $page = 'templatedata';
 					</div>
 					<div class="row">
 						<div class="span10 offset1">
-							<select id="lang-select" class="pull-right">
-								<option value="en">English</option>
-								<option value="pl">Polski</option>
-							</select>
+							<div class="pull-right">
+								<select id="lang-select">
+									<option value="en">English</option>
+									<option value="pl">Polski</option>
+								</select>
+								<p class="translate-help"><small><a href="#translate-info">Want to help with translating?</a></small></p>
+							</div>
 							<h2 data-i18n="headers.desc">Opis</h2>
 							<textarea class="input-block-level" rows="2" placeholder="opis szablonu" id="desc"></textarea>
 							<h2 data-i18n="headers.params">Parametry</h2>
@@ -41,6 +44,7 @@ $page = 'templatedata';
 		<footer class="footer">
 			<div class="container narrow row-fluid">
 				<div class="span12">
+					<p id="translate-info">You can send me translations in the <a target="_blank" href="locales/en/translation.json">following</a> format. <strong>Let's make this tool avaible to everyone!</strong></p>
 					<p>Stworzone (<a target="_blank" href="https://github.com/mlazowik/templatedata">github</a>) przez <a target="_blank" href="https://pl.wikipedia.org/wiki/Wikipedysta:Lazowik">mlazowik</a> za pomocą:</p>
 					<a target="_blank" href="http://backgridjs.com/">Backgrid.js</a>
 					· <a target="_blank" href="http://twitter.github.io/bootstrap/">Bootstrap</a>
