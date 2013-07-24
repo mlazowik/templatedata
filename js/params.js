@@ -288,7 +288,7 @@ var columns = [{
 var AddFooter = Backgrid.Footer.extend({
 	render: function () {
 		this.$el.empty();
-		this.$el.html('<tr><td colspan="8"><button class="btn btn-primary"><i class="icon-plus-sign icon-white"></i> ' + $.t("table.add") + '</button></td></tr>');
+		this.$el.html('<tr><td colspan="8"><button class="btn btn-primary">' + $.t("table.add") + '</button></td></tr>');
 		this.$el.find(":button").click(addRow);
 		this.delegateEvents();
 		return this;
