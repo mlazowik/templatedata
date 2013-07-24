@@ -76,7 +76,7 @@ var hidden = Backgrid.HeaderCell.extend({
 Backgrid.DuplicateCell = Backgrid.Cell.extend({
 	render: function() {
 		this.$el.empty();
-		this.$el.html('<div class="btn-group"><button class="btn btn-small btn-primary" data-dup>Duplikuj</button><button class="btn btn-small btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button><ul class="dropdown-menu"><li><a href="#" data-dup>Poniżej</a></li><li><a href="#" data-dup-end>Na koniec</a></li></ul></div>');
+		this.$el.html('<div class="btn-group"><button class="btn btn-small btn-primary" data-dup>' + $.t("table.dup") + '</button><button class="btn btn-small btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button><ul class="dropdown-menu"><li><a href="#" data-dup>' + $.t("table.dup-below") + '</a></li><li><a href="#" data-dup-end>' + $.t("table.dup-end") + '</a></li></ul></div>');
 		this.$el.find("[data-dup]").click({cid: this.model.cid}, dupRow);
 		this.$el.find("[data-dup-end]").click({cid: this.model.cid, end: true}, dupRow);
 		this.delegateEvents();
@@ -87,7 +87,7 @@ Backgrid.DuplicateCell = Backgrid.Cell.extend({
 Backgrid.RemoveCell = Backgrid.Cell.extend({
 	render: function() {
 		this.$el.empty();
-		this.$el.html('<button class="btn btn-small btn-danger">Usuń</button>');
+		this.$el.html('<button class="btn btn-small btn-danger">' + $.t("table.del") + '</button>');
 		this.$el.find(":button").click({cid: this.model.cid}, deleteRow);
 		this.delegateEvents();
 		return this;
@@ -95,7 +95,7 @@ Backgrid.RemoveCell = Backgrid.Cell.extend({
 });
 
 Backgrid.AliasesEditor = Backgrid.Extension.TextareaEditor.extend({
-	template: _.template('<form><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h3>Nazwa <small>/ aliasy</small></h3></div><div class="modal-body"><div class="well">Podaj nazwy parametru w oddzielnych liniach. Pierwsza będzie podstawową, pozostałe aliasami</div><textarea class="input-block-level" rows="<%= rows %>"><%- content %></textarea></div><div class="modal-footer"><button class="btn" data-dismiss="modal">Anuluj</button><input class="btn btn-primary" type="submit" value="Zapisz"/></div></form>'),
+	template: _.template('<form><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h3>' + $.t("table.param-name-header") + '</small></h3></div><div class="modal-body"><div class="well">' + $.t("table.param-name-help") + '</div><textarea class="input-block-level" rows="<%= rows %>"><%- content %></textarea></div><div class="modal-footer"><button class="btn" data-dismiss="modal">Anuluj</button><input class="btn btn-primary" type="submit" value="Zapisz"/></div></form>'),
 	rows: 5,
 	saveOrCancel: function (e) {
 		if (e && e.type == "submit") {
@@ -154,7 +154,7 @@ Backgrid.EmEmptyCell = Backgrid.StringCell.extend({
 		this.$el.empty();
 		var content = this.model.get(this.column.get("name"));
 		if (content == "") {
-			this.$el.html("<em>pusty</em>");
+			this.$el.html('<em>' + $.t("table.empty-placeholder") + '</em>');
 		} else {
 			this.$el.text(content);
 		}
@@ -219,11 +219,11 @@ Backgrid.EmUnknownCell = Backgrid.SelectCell.extend({
 		return this;
 	},
 	optionValues: [
-		["nieokreślony", "unknown"],
-		["liczba", "number"],
-		["tekst", "string"],
-		["użytkownik", "string/wiki-user-name"],
-		["strona", "string/wiki-page-name"]
+		[$.t("table.type-unknown"), "unknown"],
+		[$.t("table.type-number"), "number"],
+		[$.t("table.type-string"), "string"],
+		[$.t("table.type-user"), "string/wiki-user-name"],
+		[$.t("table.type-page"), "string/wiki-page-name"]
 	]
 });
 
@@ -235,50 +235,50 @@ Backgrid.HoverBoolCell = Backgrid.BooleanCell.extend({
 
 var columns = [{
 	name: "label",
-	label: "Parametr",
+	label: $.t("table.param"),
 	cell: "string",
 	sortable: false,
 	headerCell: colspan2span2
 }, {
 	name: "param",
-	label: "Nazwa",
+	label: "",
 	cell: "aliases",
 	sortable: false,
 	headerCell: hidden
 }, {
 	name: "desc",
-	label: "Opis",
+	label: $.t("table.desc"),
 	cell: "string",
 	sortable: false,
 	headerCell: span6
 }, {
 	name: "type",
-	label: "Typ",
+	label: $.t("table.type"),
 	cell: "emUnknown",
 	sortable: false,
 	headerCell: span1
 }, {
 	name: "default",
-	label: "Domyślnie",
+	label: $.t("table.default"),
 	cell: "emEmpty",
 	sortable: false,
 	headerCell: span1
 }, {
 	name: "required",
-	label: "Wymagany",
+	label: $.t("table.required"),
 	cell: "hoverBool",
 	sortable: false,
 	headerCell: span1
 }, {
 	name: "dup",
-	label: "Akcje",
+	label: $.t("table.actions"),
 	cell: "duplicate",
 	sortable: false,
 	editable: false,
 	headerCell: colspan2span1
 }, {
 	name: "remove",
-	label: "Usuń",
+	label: "",
 	cell: "remove",
 	sortable: false,
 	editable: false,
@@ -288,7 +288,7 @@ var columns = [{
 var AddFooter = Backgrid.Footer.extend({
 	render: function () {
 		this.$el.empty();
-		this.$el.html('<tr><td colspan="8"><button class="btn btn-primary">Dodaj</button></td></tr>');
+		this.$el.html('<tr><td colspan="8"><button class="btn btn-primary">' + $.t("table.add") + '</button></td></tr>');
 		this.$el.find(":button").click(addRow);
 		this.delegateEvents();
 		return this;

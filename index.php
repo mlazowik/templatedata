@@ -18,15 +18,19 @@ $page = 'templatedata';
 			<div class="row">
 				<div class="span12">
 					<div class="page-header">
-						<h1>Generator TemplateData</h1>
+						<h1 data-i18n="headers.page">Edytor TemplateData</h1>
 					</div>
 					<div class="row">
 						<div class="span10 offset1">
-							<h2>Opis</h2>
+							<select id="lang-select" class="pull-right">
+								<option value="en">English</option>
+								<option value="pl">Polski</option>
+							</select>
+							<h2 data-i18n="headers.desc">Opis</h2>
 							<textarea class="input-block-level" rows="2" placeholder="opis szablonu" id="desc"></textarea>
-							<h2>Parametry</h2>
+							<h2 data-i18n="headers.params">Parametry</h2>
 							<div id="params" class="backgid-container"></div>
-							<h2>Wynik</h2>
+							<h2 data-i18n="headers.result">Wynik</h2>
 							<pre id="templatedata"></pre>
 						</div>
 					</div>
@@ -48,10 +52,12 @@ $page = 'templatedata';
 		<?php
 		require '../js.php';
 		?>
-		<script src="js/underscore.js"></script>
-		<script src="js/backbone.js"></script>
-		<script src="js/backgrid.min.js"></script>
-		<script src="js/backgrid-text-cell.min.js"></script>
-		<script src="js/params.js"></script>
+		<script type="text/javascript" src="js/i18next.min.js"></script>
+		<script type="text/javascript" src="js/locale.js"></script>
+		<script type="text/javascript" src="js/underscore.js"></script>
+		<script type="text/javascript" src="js/backbone.js"></script>
+		<script type="text/javascript" src="js/backgrid.min.js"></script>
+		<script type="text/javascript" src="js/backgrid-text-cell.min.js"></script>
+		<script type="text/javascript" src="js/params.js"></script>
 	</body>
 </html>

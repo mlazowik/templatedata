@@ -1,0 +1,32 @@
+{
+	"headers": {
+		"page": "Edytor TemplateData",
+		"desc": "Opis",
+		"params": "Parametry",
+		"result": "Wynik"
+	},
+	"placeholders": {
+		"desc": "opis szablonu"
+	},
+	"table": {
+		"param": "Parametr",
+		"desc": "Opis",
+		"type": "Typ",
+		"default": "Domyślnie",
+		"required": "Wymagany",
+		"actions": "Akcje",
+		"add": "Dodaj",
+		"dup": "Duplikuj",
+		"dup-below": "Poniżej",
+		"dup-end": "Na koniec",
+		"del": "Usuń",
+		"param-name-header": "Nazwa <small>/ aliasy</small>",
+		"param-name-help": "Podaj nazwy parametru w oddzielnych liniach. Pierwsza będzie podstawową, pozostałe aliasami.",
+		"type-unknown": "nieokreślony",
+		"type-number": "liczba",
+		"type-string": "tekst",
+		"type-user": "użytkownik",
+		"type-page": "strona",
+		"empty-placeholder": "pusty"
+	}
+}

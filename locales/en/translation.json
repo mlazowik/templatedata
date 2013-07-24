@@ -1,0 +1,32 @@
+{
+	"headers": {
+		"page": "TemplateData Editor",
+		"desc": "Description",
+		"params": "Parameters",
+		"result": "Result"
+	},
+	"placeholders": {
+		"desc": "template description"
+	},
+	"table": {
+		"param": "Parameter",
+		"desc": "Description",
+		"type": "Type",
+		"default": "Default",
+		"required": "Required",
+		"actions": "Actions",
+		"add": "Add",
+		"dup": "Duplicate",
+		"dup-below": "Below",
+		"dup-end": "To end",
+		"del": "Delete",
+		"param-name-header": "Name <small>/ aliases</small>",
+		"param-name-help": "Enter parameter names in separate lines. First will be the main one, the rest will be aliases.",
+		"type-unknown": "undefined",
+		"type-number": "number",
+		"type-string": "string",
+		"type-user": "user",
+		"type-page": "page",
+		"empty-placeholder": "empty"
+	}
+}
