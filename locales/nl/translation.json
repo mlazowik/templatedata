@@ -22,6 +22,8 @@
                 "del": "Verwijderen",
                 "param-name-header": "Naam <small>/ aliassen</small>",
                 "param-name-help": "Namen van parameters invoeren op losse regels. De eerste wordt de standaardnaam, de rest worden aliassen.",
+				"save": "Opslaan",
+				"cancel": "Annuleren",
                 "type-unknown": "ongespecificeerd",
                 "type-number": "nummer",
                 "type-string": "string",
