@@ -4,7 +4,6 @@ var options = {
 	fallbackLng: 'en',
 	useDataAttrOptions: true,
 	useCookie: false,
-	debug: true,
 	getAsync: false
 };
 
