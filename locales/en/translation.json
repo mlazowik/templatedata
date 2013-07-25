@@ -22,6 +22,8 @@
 		"del": "Delete",
 		"param-name-header": "Name <small>/ aliases</small>",
 		"param-name-help": "Enter parameter names in separate lines. First will be the main one, the rest will be aliases.",
+		"save": "Save",
+		"cancel": "Cancel",
 		"type-unknown": "undefined",
 		"type-number": "number",
 		"type-string": "string",

@@ -22,6 +22,8 @@
 		"del": "Usuń",
 		"param-name-header": "Nazwa <small>/ aliasy</small>",
 		"param-name-help": "Podaj nazwy parametru w oddzielnych liniach. Pierwsza będzie podstawową, pozostałe aliasami.",
+		"save": "Zapisz",
+		"cancel": "Anuluj",
 		"type-unknown": "nieokreślony",
 		"type-number": "liczba",
 		"type-string": "tekst",
