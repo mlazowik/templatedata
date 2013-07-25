@@ -54,6 +54,7 @@ $page = 'templatedata';
 								<a target="_blank" href="http://backgridjs.com/">Backgrid.js</a>
 								· <a target="_blank" href="http://twitter.github.io/bootstrap/">Bootstrap</a>
 								· <a target="_blank" href="http://jquery.com/">jQuery</a>
+								· <a target="_blank" href="http://i18next.com">i18next</a>
 							</div>
 						</div>
 					</div>

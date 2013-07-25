@@ -12,4 +12,5 @@ Uses
 ----
  - [backgrid.js](http://backgridjs.com)
  - [bootstrap](http://twitter.github.io/bootstrap/)
+ - [i18next](http://i18next.com)
  - their dependiences
