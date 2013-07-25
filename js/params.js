@@ -361,7 +361,7 @@ function templatedata($collection, $description) {
 		};
 
 		if (mParam.get("default") != "")
-			param["default"] = mParam.get("default");
+			param.default = mParam.get("default");
 
 		var paramNames = mParam.get("param").split("\n");
 
@@ -373,13 +373,13 @@ function templatedata($collection, $description) {
 				aliases.push( paramNames[i] );
 			}
 
-			param["aliases"] = aliases;
+			param.aliases = aliases;
 		}
 
 		params[paramName] = param;
 	} );
 
-	data["params"] = params;
+	data.params = params;
 
 	$("#templatedata").text( JSON.stringify( data, null, "\t" ) );
 }
