@@ -27,6 +27,7 @@ $page = 'templatedata';
 									<option value="en">English</option>
 									<option value="nl">Nederlands</option>
 									<option value="pl">Polski</option>
+									<option value="pt">Português</option>
 								</select>
 								<p class="translate-help"><small><a href="#translate-info">Want to help with translating?</a></small></p>
 							</div>

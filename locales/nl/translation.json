@@ -1,34 +1,34 @@
 {
-        "headers": {
-                "page": "TemplateData-bewerker",
-                "desc": "Omschrijving",
-                "params": "Parameters",
-                "result": "Resultaat"
-        },
-        "placeholders": {
-                "desc": "omschrijving van sjabloon"
-        },
-        "table": {
-                "param": "Parameter",
-                "desc": "Omschrijving",
-                "type": "Type",
-                "default": "Standaard",
-                "required": "Verplicht",
-                "actions": "Acties",
-                "add": "Toevoegen",
-                "dup": "Dupliceren",
-                "dup-below": "Hieronder",
-                "dup-end": "Aan het einde",
-                "del": "Verwijderen",
-                "param-name-header": "Naam <small>/ aliassen</small>",
-                "param-name-help": "Namen van parameters invoeren op losse regels. De eerste wordt de standaardnaam, de rest worden aliassen.",
-				"save": "Opslaan",
-				"cancel": "Annuleren",
-                "type-unknown": "ongespecificeerd",
-                "type-number": "nummer",
-                "type-string": "string",
-                "type-user": "gebruiker",
-                "type-page": "pagina",
-                "empty-placeholder": "leeg"
-        }
+	"headers": {
+		"page": "TemplateData-bewerker",
+		"desc": "Omschrijving",
+		"params": "Parameters",
+		"result": "Resultaat"
+	},
+	"placeholders": {
+		"desc": "omschrijving van sjabloon"
+	},
+	"table": {
+		"param": "Parameter",
+		"desc": "Omschrijving",
+		"type": "Type",
+		"default": "Standaard",
+		"required": "Verplicht",
+		"actions": "Acties",
+		"add": "Toevoegen",
+		"dup": "Dupliceren",
+		"dup-below": "Hieronder",
+		"dup-end": "Aan het einde",
+		"del": "Verwijderen",
+		"param-name-header": "Naam <small>/ aliassen</small>",
+		"param-name-help": "Namen van parameters invoeren op losse regels. De eerste wordt de standaardnaam, de rest worden aliassen.",
+		"save": "Opslaan",
+		"cancel": "Annuleren",
+		"type-unknown": "ongespecificeerd",
+		"type-number": "nummer",
+		"type-string": "string",
+		"type-user": "gebruiker",
+		"type-page": "pagina",
+		"empty-placeholder": "leeg"
+	}
 }

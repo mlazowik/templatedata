@@ -1,0 +1,34 @@
+{
+	"headers": {
+		"page": "Editor de TemplateData",
+		"desc": "Descrição",
+		"params": "Parâmetros",
+		"result": "Resultado"
+	},
+	"placeholders": {
+		"desc": "Descrição da predefinição"
+	},
+	"table": {
+		"param": "Parâmetro",
+		"desc": "Descrição",
+		"type": "Tipo",
+		"default": "Padrão",
+		"required": "Obrigatório",
+		"actions": "Ações",
+		"add": "Incluir",
+		"dup": "Duplicar",
+		"dup-below": "Abaixo",
+		"dup-end": "No final",
+		"del": "Apagar",
+		"param-name-header": "Nome <small>/ nomes alternativos</small>",
+		"param-name-help": "Forneça os nomes dos parâmetros em linhas distintas. O primeiro será o principal, os demais serão considerados nomes alternativos.",
+		"save": "Salvar",
+		"cancel": "Cancelar",
+		"type-unknown": "indefinido",
+		"type-number": "número",
+		"type-string": "texto",
+		"type-user": "usuário",
+		"type-page": "página",
+		"empty-placeholder": "vazio"
+	}
+}
