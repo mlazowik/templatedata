@@ -42,13 +42,20 @@ $page = 'templatedata';
 		</div>
 
 		<footer class="footer">
-			<div class="container narrow row-fluid">
-				<div class="span12">
-					<p id="translate-info">You can send me translations in the <a target="_blank" href="locales/en/translation.json">following</a> format. <strong>Let's make this tool avaible to everyone!</strong></p>
-					<p>Stworzone (<a target="_blank" href="https://github.com/mlazowik/templatedata">github</a>) przez <a target="_blank" href="https://pl.wikipedia.org/wiki/Wikipedysta:Lazowik">mlazowik</a> za pomocą:</p>
-					<a target="_blank" href="http://backgridjs.com/">Backgrid.js</a>
-					· <a target="_blank" href="http://twitter.github.io/bootstrap/">Bootstrap</a>
-					· <a target="_blank" href="http://jquery.com/">jQuery</a>
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<div class="row">
+							<div class="span10 offset1">
+								<p id="translate-info">You can send me translations in the <a target="_blank" href="locales/en/translation.json">following</a> format. Just write on my <a target="_blank" href="https://pl.wikipedia.org/wiki/Dyskusja_wikipedysty:Lazowik">talk page</a> and include a link to <a target="_blank" href="http://pastebin.com/">pastebin</a> or anything similar. Or send me an email to &ltmy github username&gt at tools.wikimedia.pl. <strong>Let's make this tool avaible to everyone!</strong></p>
+								<hr>
+								<p>Stworzone (<a target="_blank" href="https://github.com/mlazowik/templatedata">github</a>) przez <a target="_blank" href="https://pl.wikipedia.org/wiki/Wikipedysta:Lazowik">mlazowik</a> za pomocą:</p>
+								<a target="_blank" href="http://backgridjs.com/">Backgrid.js</a>
+								· <a target="_blank" href="http://twitter.github.io/bootstrap/">Bootstrap</a>
+								· <a target="_blank" href="http://jquery.com/">jQuery</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>

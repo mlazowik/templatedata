@@ -139,7 +139,7 @@ Backgrid.AliasesCell = Backgrid.Extension.TextCell.extend({
 			if ( value != "" )
 				that.$el.append($('<code/>').text(value), ' ');
 			if (hr) {
-				that.$el.append("<hr />");
+				that.$el.append("<hr>");
 				hr = false;
 			}
 		});
