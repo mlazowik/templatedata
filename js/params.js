@@ -381,7 +381,7 @@ function templatedata($collection, $description) {
 
 	data["params"] = params;
 
-	$("[id='templatedata']").text( JSON.stringify( data, null, "\t" ) );
+	$("#templatedata").text( JSON.stringify( data, null, "\t" ) );
 }
 
 $(document).ready( function() {
