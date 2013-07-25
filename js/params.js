@@ -116,11 +116,7 @@ Backgrid.AliasesEditor = Backgrid.Extension.TextareaEditor.extend({
 				e.stopPropagation();
 			}
 		}
-		else if (!e || e.type == "submit" ||
-			(e.type == "hide" &&
-				newValue !== (this.model.get(this.column.get("name")) || '').replace(/\r/g, '') &&
-				window.confirm("Czy chcesz zapisać zmiany?"))
-		) {
+		else if (!e || e.type == "submit") {
 			model.set(column.get("name"), newValue);
 			this.$el.modal("hide");
 		}
