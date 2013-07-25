@@ -1,6 +1,7 @@
 # libraries folders
 backgrid/
 i18next/
+deploy
 
 # OS generated files #
 ######################
