@@ -37,6 +37,21 @@ $page = 'templatedata';
 							<div id="params" class="backgid-container"></div>
 							<h2 data-i18n="headers.result">Wynik</h2>
 							<pre id="templatedata"></pre>
+							<h2>Credits</h2>
+							<p><strong>Written by:</strong></p>
+							<ul>
+								<li>Michał Łazowik (<a href="https://github.com/mlazowik">mlazowik</a>)</li>
+							</ul>
+							<p><strong>Code fixes:</strong></p>
+							<ul>
+								<li>Bartosz Dziewoński (<a href="https://github.com/MatmaRex">MatmaRex</a>)</li>
+								<li>Timo Tijhof (<a href="https://github.com/Krinkle">Krinkle</a>)
+							</ul>
+							<p><strong>Translations:</strong></p>
+							<ul>
+								<li>Dutch (Nederlands): Sjoerd de Bruin (<a href="https://nl.wikipedia.org/wiki/Gebruiker:Sjoerddebruin">Sjoerddebruin</a>)</li>
+								<li>Portugese (Português): <a href="https://pt.wikibooks.org/wiki/Utilizador:Helder.wiki">Helder.wiki</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
