@@ -17,6 +17,10 @@ textarea.input-block-level {
 	border-top: 1px solid #cccccc;
 }
 
+#lang-box {
+	float: right;
+}
+
 #lang-select {
 	margin-bottom: 0;
 }

@@ -2,10 +2,10 @@
 require '../head.php';
 $page = 'templatedata';
 ?>
-		<link rel="stylesheet" href="style/table.css" />
-		<link rel="stylesheet" href="style/main.css" />
 		<link rel="stylesheet" href="style/backgrid.min.css" />
 		<link rel="stylesheet" href="style/backgrid-text-cell.min.css" />
+		<link rel="stylesheet" href="style/main.css" />
+		<link rel="stylesheet" href="style/table.css" />
 
 		<title>TemplateData</title>
 	</head>
@@ -17,48 +17,60 @@ $page = 'templatedata';
 		<div class="container">
 			<div class="row">
 				<div class="span12">
-					<div class="page-header">
+					<header class="page-header">
 						<h1 data-i18n="headers.page">Edytor TemplateData</h1>
-					</div>
+					</header>
 					<div class="row">
 						<div class="span10 offset1">
-							<div class="pull-right">
+							<div id="lang-box">
 								<select id="lang-select">
 									<option value="en">English</option>
 									<option value="nl">Nederlands</option>
 									<option value="pl">Polski</option>
 									<option value="pt">Português</option>
 								</select>
-								<p class="translate-help"><small><a href="#translate-info">Want to help with translating?</a></small></p>
+								<p lang="en" dir="ltr" class="translate-help"><small><a href="#translate-info">Want to help with translating?</a></small></p>
 							</div>
-							<h2 data-i18n="headers.desc">Opis</h2>
-							<textarea class="input-block-level" rows="2" placeholder="opis szablonu" id="desc"></textarea>
-							<h2 data-i18n="headers.params">Parametry</h2>
-							<div id="params" class="backgid-container"></div>
-							<h2 data-i18n="headers.result">Wynik</h2>
-							<pre id="templatedata"></pre>
-							<h2>Credits</h2>
-							<p><strong>Written by:</strong></p>
-							<ul>
-								<li>Michał Łazowik (<a href="https://github.com/mlazowik">mlazowik</a>)</li>
-							</ul>
-							<p><strong>Code fixes:</strong></p>
-							<ul>
-								<li>Bartosz Dziewoński (<a href="https://github.com/MatmaRex">MatmaRex</a>)</li>
-								<li>Timo Tijhof (<a href="https://github.com/Krinkle">Krinkle</a>)
-							</ul>
-							<p><strong>Translations:</strong></p>
-							<ul>
-								<li>Dutch (Nederlands): Sjoerd de Bruin (<a href="https://nl.wikipedia.org/wiki/Gebruiker:Sjoerddebruin">Sjoerddebruin</a>)</li>
-								<li>Portugese (Português): <a href="https://pt.wikibooks.org/wiki/Utilizador:Helder.wiki">Helder.wiki</a></li>
-							</ul>
+
+							<section>
+								<h2 data-i18n="headers.desc">Opis</h2>
+								<textarea class="input-block-level" rows="2" placeholder="opis szablonu" id="desc"></textarea>
+							</section>
+
+							<section>
+								<h2 data-i18n="headers.params">Parametry</h2>
+								<div id="params" class="backgid-container"></div>
+							</section>
+
+							<section>
+								<h2 data-i18n="headers.result">Wynik</h2>
+								<pre dir="ltr" id="templatedata"></pre>
+							</section>
+
+							<section lang="en" dir="ltr">
+								<h2>Credits</h2>
+								<p><strong>Written by:</strong></p>
+								<ul>
+									<li>Michał Łazowik (<a href="https://github.com/mlazowik">mlazowik</a>)</li>
+								</ul>
+								<p><strong>Code fixes:</strong></p>
+								<ul>
+									<li>Bartosz Dziewoński (<a href="https://github.com/MatmaRex">MatmaRex</a>)</li>
+									<li>Timo Tijhof (<a href="https://github.com/Krinkle">Krinkle</a>)
+								</ul>
+								<p><strong>Translations:</strong></p>
+								<ul>
+									<li>Dutch (Nederlands): Sjoerd de Bruin (<a href="https://nl.wikipedia.org/wiki/Gebruiker:Sjoerddebruin">Sjoerddebruin</a>)</li>
+									<li>Portugese (Português): <a href="https://pt.wikibooks.org/wiki/Utilizador:Helder.wiki">Helder.wiki</a></li>
+								</ul>
+							</section>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<footer class="footer">
+		<footer dir="ltr" lang="en" class="footer">
 			<div class="container">
 				<div class="row">
 					<div class="span12">

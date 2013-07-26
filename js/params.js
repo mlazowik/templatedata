@@ -95,7 +95,7 @@ Backgrid.RemoveCell = Backgrid.Cell.extend({
 });
 
 Backgrid.AliasesEditor = Backgrid.Extension.TextareaEditor.extend({
-	template: _.template('<form><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h3>' + $.t("table.param-name-header") + '</small></h3></div><div class="modal-body"><div class="well">' + $.t("table.param-name-help") + '</div><textarea class="input-block-level" rows="<%= rows %>"><%- content %></textarea></div><div class="modal-footer"><button class="btn" data-dismiss="modal">' + $.t("table.cancel") + '</button><input class="btn btn-primary" type="submit" value="' + $.t("table.save") + '"/></div></form>'),
+	template: _.template('<form><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h3>' + $.t("table.param-name-header") + '</small></h3></div><div class="modal-body"><div class="well">' + $.t("table.param-name-help") + '</div><textarea class="input-block-level" rows="<%= rows %>"><%- content %></textarea></div><div class="modal-footer"><div><button class="btn" data-dismiss="modal">' + $.t("table.cancel") + '</button><input class="btn btn-primary" type="submit" value="' + $.t("table.save") + '"/></div></div></form>'),
 	rows: 5,
 	saveOrCancel: function (e) {
 		if (e && e.type == "submit") {
