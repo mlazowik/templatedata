@@ -22,6 +22,11 @@ $page = 'templatedata';
 					</header>
 					<div class="row">
 						<div class="span10 offset1">
+							<div dir="ltr" lang="en" class="alert alert-info">
+								<button type="button" class="close" data-dismiss="alert">&times;</button>
+								Looking for translations. More information <a href="#translate-info">in the bottom of the page</a>. Also, the interface now supports rtl languages :) (of course only when the translation is avaible).
+							</div>
+
 							<div id="lang-box">
 								<select id="lang-select">
 									<option value="en">English</option>
