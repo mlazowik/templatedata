@@ -47,6 +47,42 @@ $page = 'templatedata';
 							<section>
 								<h2 data-i18n="headers.params">Parametry</h2>
 								<div id="params" class="backgid-container"></div>
+								<div id="import" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="import" aria-hidden="true">
+									<form>
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+											<h3>Import</h3>
+										</div>
+										<div class="modal-body">
+											<div class="well">Lorem ipusm...</div>
+											<textarea class="input-block-level" rows="10"></textarea>
+										</div>
+										<div class="modal-footer">
+											<div>
+												<button class="btn" data-dismiss="modal">Anuluj</button>
+												<input class="btn btn-primary" type="submit" value="Zapisz"/>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div id="import-replace" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="import-replace" aria-hidden="true">
+									<form>
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+											<h3>Import</h3>
+										</div>
+										<div class="modal-body">
+											<div class="well">Lorem ipusm... no właśnie</div>
+											<textarea class="input-block-level" rows="10"></textarea>
+										</div>
+										<div class="modal-footer">
+											<div>
+												<button class="btn" data-dismiss="modal">Anuluj</button>
+												<input class="btn btn-primary" type="submit" value="Zapisz"/>
+											</div>
+										</div>
+									</form>
+								</div>
 							</section>
 
 							<section>

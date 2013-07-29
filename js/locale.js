@@ -23,6 +23,8 @@ function rtl() {
 	} );
 
 	$("#params").addClass("rtl");
+	$("#import").addClass("rtl");
+	$("#import-replace").addClass("rtl");
 }
 
 $.i18n.init( options, function(t) {

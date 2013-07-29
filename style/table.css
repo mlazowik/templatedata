@@ -119,15 +119,15 @@
   text-align: right !important;
 }
 
-.rtl table * .modal-header .close {
+.rtl * .modal-header .close {
   float: left;
 }
 
-.rtl table * .modal-footer div {
+.rtl  * .modal-footer div {
   float: left;
 }
 
-.rtl table * .modal-footer div input {
+.rtl  * .modal-footer div input {
   margin-left: 0;
   margin-right: 5px;
 }
