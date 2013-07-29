@@ -31,6 +31,7 @@ $page = 'templatedata';
 								<select id="lang-select">
 									<option value="en">English</option>
 									<option value="fr">Français</option>
+									<option value="he">עברית</option>
 									<option value="nl">Nederlands</option>
 									<option value="pl">Polski</option>
 									<option value="pt">Português</option>
@@ -68,7 +69,8 @@ $page = 'templatedata';
 								<ul>
 									<li>Dutch (Nederlands): Sjoerd de Bruin (<a href="https://nl.wikipedia.org/wiki/Gebruiker:Sjoerddebruin">Sjoerddebruin</a>)</li>
 									<li>Portugese (Português): <a href="https://pt.wikibooks.org/wiki/Utilizador:Helder.wiki">Helder.wiki</a></li>
-									<li>French (Français): <a href="http://en.wikipedia.org/wiki/User:Rastus_Vernon">Rastus Vernon</a></li>
+									<li>French (Français): <a href="https://en.wikipedia.org/wiki/User:Rastus_Vernon">Rastus Vernon</a></li>
+									<li>Hebrew (עברית): Eran Roz (<a href="https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%AA%D7%9E%D7%A9:%D7%A2%D7%A8%D7%9F">ערן</a>)</li>
 								</ul>
 							</section>
 						</div>

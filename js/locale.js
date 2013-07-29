@@ -22,7 +22,7 @@ function rtl() {
 			el.css( "float", "right" );
 	} );
 
-	$(".table-editable").addClass("rtl");
+	$("#params").addClass("rtl");
 }
 
 $.i18n.init( options, function(t) {
