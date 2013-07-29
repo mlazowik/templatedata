@@ -1,0 +1,34 @@
+{
+	"headers": {
+		"page": "Éditeur TemplateData",
+			"desc": "Description",
+			"params": "Paramètres",
+			"result": "Résultat"
+	},
+	"placeholders": {
+		"desc": "description du modèle"
+	},
+	"table": {
+		"param": "Paramètre",
+		"desc": "Description",
+		"type": "Type",
+		"default": "Valeur par défaut",
+		"required": "Requis",
+		"actions": "Actions",
+		"add": "Ajouter",
+		"dup": "Doublon",
+		"dup-below": "En dessous",
+		"dup-end": "À la fin",
+		"del": "Supprimer",
+		"param-name-header": "Nom <small>/ alias</small>",
+		"param-name-help": "Entrez les noms des paramètres dans des lignes séparées. Le premier sera le nom, les autres seront des alias.",
+		"save": "Enregistrer",
+		"cancel": "Annuler",
+		"type-unknown": "indéfini",
+		"type-number": "nombre",
+		"type-string": "chaîne de caractère",
+		"type-user": "utilisateur",
+		"type-page": "page",
+		"empty-placeholder": "vide"
+	}
+}
