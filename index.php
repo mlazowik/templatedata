@@ -51,16 +51,21 @@ $page = 'templatedata';
 									<form>
 										<div class="modal-header">
 											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-											<h3>Import</h3>
+											<h3 data-i18n="table.import">Importuj</h3>
 										</div>
 										<div class="modal-body">
-											<div class="well">Lorem ipusm...</div>
-											<textarea class="input-block-level" rows="10"></textarea>
+											<div class="well" data-i18n="[html]table.import-info">Wklej tutaj istniejące TemplateData, bez tagów <code>&lttemplatedata&gt</code> <code>&lt/templatedata&gt</code>. Zostaną one dodane na koniec tabeli.</div>
+											<div class="control-group">
+												<div class="controls">
+													<textarea dir="ltr" class="input-block-level" rows="10"></textarea>
+													<span class="help-inline"></span>
+												</div>
+											</div>
 										</div>
 										<div class="modal-footer">
 											<div>
-												<button class="btn" data-dismiss="modal">Anuluj</button>
-												<input class="btn btn-primary" type="submit" value="Zapisz"/>
+												<button class="btn" data-dismiss="modal" data-i18n="table.cancel">Anuluj</button>
+												<button class="btn btn-primary" type="submit" data-i18n="table.save" disabled="disabled">Zapisz</button>
 											</div>
 										</div>
 									</form>
@@ -69,16 +74,21 @@ $page = 'templatedata';
 									<form>
 										<div class="modal-header">
 											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-											<h3>Import</h3>
+											<h3 data-i18n="table.import">Importuj</h3>
 										</div>
 										<div class="modal-body">
-											<div class="well">Lorem ipusm... no właśnie</div>
-											<textarea class="input-block-level" rows="10"></textarea>
+											<div class="well" data-i18n="[html]table.import-info-replace">Wklej tutaj istniejące TemplateData, bez tagów <code>&lttemplatedata&gt</code> <code>&lt/templatedata&gt</code>. <strong>Zastąpią one dane z tabeli!</strong></div>
+											<div class="control-group">
+												<div class="controls">
+													<textarea dir="ltr" class="input-block-level" rows="10"></textarea>
+													<span class="help-inline"></span>
+												</div>
+											</div>
 										</div>
 										<div class="modal-footer">
 											<div>
-												<button class="btn" data-dismiss="modal">Anuluj</button>
-												<input class="btn btn-primary" type="submit" value="Zapisz"/>
+												<button class="btn" data-dismiss="modal" data-i18n="table.cancel">Anuluj</button>
+												<button class="btn btn-primary" type="submit" data-i18n="table.save" disabled="disabled">Zapisz</button>
 											</div>
 										</div>
 									</form>

@@ -302,8 +302,6 @@ var grid = new Backgrid.Grid({
 // Render the grid and attach the root to your HTML document
 $("#params").append(grid.render().$el);
 
-//params.fetch({reset: true});
-
 // Akcje
 function addRow() {
 	grid.insertRow([{
@@ -337,18 +335,17 @@ function deleteRow (event) {
 	templatedata(params, $("#desc").val());
 }
 
-/* on description edit */
-$("#desc").keyup( function() {
-	templatedata(params, $(this).val());
-} );
+function deleteAllRows() {
+	params.reset();
+}
 
 /* create templatedata json */
 
-function templatedata($collection, $description) {
-	var data = { description: $description };
+function templatedata(collection, description) {
+	var data = { description: description };
 
 	var params = {};
-	$collection.each( function(mParam) {
+	collection.each( function(mParam) {
 		var param = {
 			label: mParam.get("label"),
 			type: mParam.get("type"),
@@ -380,6 +377,111 @@ function templatedata($collection, $description) {
 	$("#templatedata").text( JSON.stringify( data, null, "\t" ) );
 }
 
+/* import existing templatedata */
+
+function importData(input) {
+	try {
+		var data = $.parseJSON( input );
+	} catch (err) {
+		return;
+	}
+
+	description = $("#desc").val();
+	if ( $.type( data.description ) === "string" ) {
+		description = data.description;
+		$("#desc").val( description );
+	}
+
+	if (data.params != null) {
+		var model;
+		$.each( data.params, function(name, param) {
+			model = {
+				"label": "",
+				"param": "",
+				"desc": "",
+				"type": "string",
+				"default": "",
+				"required": false
+			};
+
+			model.param = name;
+
+			if ( $.isArray( param.aliases ) ) {
+				$.each( param.aliases, function(i, alias) {
+					model.param += "\n" + alias;
+				} );
+			}
+
+			$.each( {
+				"label": "label",
+				"desc": "description",
+				"type": "type",
+				"default": "default",
+				"required": "required"
+				},
+				function(m, j) {
+					if ( param[j] != null ) {
+						model[m] = param[j];
+					}
+				}
+			);
+
+			grid.insertRow([model]);
+		} );
+	}
+
+	templatedata(params, description);
+}
+
+function clearImportForm(el) {
+	el.find(".control-group").removeClass("error");
+	el.find(".help-inline").text("");
+	el.trigger("reset");
+	el.find('button[type="submit"]').attr("disabled", "disabled");
+}
+
 $(document).ready( function() {
 	templatedata(params, $("#desc").val());
+
+	// validate json input
+	$("#import, #import-replace").find("textarea").keyup( function() {
+		try {
+			var data = $.parseJSON( $(this).val() );
+			$(this).closest(".control-group").removeClass("error");
+			$(".help-inline").text("");
+			$(this).closest("form").find('button[type="submit"]').removeAttr("disabled");
+		} catch (err) {
+			$(this).closest(".control-group").addClass("error");
+			$(this).parent().children(".help-inline").text( err );
+			$(this).closest("form").find('button[type="submit"]').attr("disabled", "disabled");
+		}
+	} );
+
+	// clear input on hide
+	$("#import, #import-replace").on("hidden", function() {
+		clearImportForm( $(this).children("form") );
+	} );
+
+	// submit import
+	$("#import").children("form").submit( function(event) {
+		event.preventDefault();
+
+		importData( $(this).find("textarea").val() );
+
+		$(this).parent().modal("hide");
+	} );
+
+	$("#import-replace").children("form").submit( function(event) {
+		event.preventDefault();
+
+		deleteAllRows();
+		importData( $(this).find("textarea").val() );
+
+		$(this).parent().modal("hide");
+	} );
+
+	/* on description edit */
+	$("#desc").keyup( function() {
+		templatedata(params, $(this).val());
+	} );
 } );
