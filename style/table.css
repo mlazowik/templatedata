@@ -115,7 +115,7 @@
 
 .rtl table tr th,
 .rtl table tr td,
-.rtl table * input {
+.rtl * input {
   text-align: right !important;
 }
 
@@ -132,7 +132,7 @@
   margin-right: 5px;
 }
 
-.rtl table * .btn-group > .btn:first-child {
+.rtl * .btn-group > .btn:first-child {
   margin-right: 0;
   -webkit-border-bottom-right-radius: 4px;
           border-bottom-right-radius: 4px;
@@ -150,8 +150,8 @@
   -moz-border-radius-topleft: 0;
 }
 
-.rtl table * .btn-group > .btn:last-child,
-.rtl table * .btn-group > .dropdown-toggle {
+.rtl * .btn-group > .btn:last-child,
+.rtl * .btn-group > .dropdown-toggle {
   -webkit-border-top-left-radius: 4px;
           border-top-left-radius: 4px;
   -webkit-border-bottom-left-radius: 4px;
@@ -165,6 +165,10 @@
           border-bottom-right-radius: 0;
   -moz-border-radius-topright: 0;
   -moz-border-radius-bottomright: 0;
+}
+
+.rtl * .dropdown-menu {
+	right: 0;
 }
 
 .table-editable .boolean-cell,
