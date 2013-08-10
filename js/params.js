@@ -374,7 +374,7 @@ function templatedata(collection, description) {
 
 	data.params = params;
 
-	$("#templatedata").text( JSON.stringify( data, null, "\t" ) );
+	$("#templatedata").text( "<templatedata>\n" + JSON.stringify( data, null, "\t" ) + "\n</templatedata>" );
 }
 
 /* import existing templatedata */
