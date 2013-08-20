@@ -1,0 +1,39 @@
+{
+	"headers": {
+		"page": "Editor de TemplateData",
+		"desc": "Descripción",
+		"params": "Parámetros",
+		"result": "Resultados"
+	},
+	"placeholders": {
+		"desc": "Descripción de la plantilla"
+	},
+	"table": {
+		"param": "Parámetro",
+		"desc": "Descripción",
+		"type": "Tipo",
+		"default": "Defecto",
+		"required": "Obligatorio",
+		"actions": "Acciones",
+		"add": "Añadir",
+		"import": "Importar",
+		"import-append": "Adjuntar",
+		"import-replace": "Reemplazar",
+		"import-info": "Pegue aquí la TemplateData existente, sin las etiquetas <code>&lttemplatedata&gt</code> <code>&lt/templatedata&gt</code>. Ellos se añadirán al final de la tabla",
+		"import-info-replace": "Pegue aquí la TemplateData existente, sin las etiquetas <code>&lttemplatedata&gt</code> <code>&lt/templatedata&gt</code>. <strong>¡Se reemplazarán todos los datos de la tabla!</strong>",
+		"dup": "Duplicar",
+		"dup-below": "Abajo",
+		"dup-end": "En el final",
+		"del": "Borrar",
+		"param-name-header": "Nombre <small>/ aliases</small>",
+		"param-name-help": "Escriba los nombres de los parámetros en líneas separadas. En primer lugar será el principal, el resto será aliases.",
+		"save": "Guardar",
+		"cancel": "Cancelar",
+		"type-unknown": "indefinido",
+		"type-number": "número",
+		"type-string": "texto",
+		"type-user": "usuario",
+		"type-page": "página",
+		"empty-placeholder": "vacío"
+	}
+}
