@@ -9,7 +9,7 @@
 		"desc": "Descrição da predefinição"
 	},
 	"table": {
-		"param": "Parâmetro",
+		"name": "Nome",
 		"desc": "Descrição",
 		"type": "Tipo",
 		"default": "Padrão",

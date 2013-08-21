@@ -18,8 +18,19 @@ var Params = Backbone.Collection.extend({
 
 var params = new Params();
 
-var colspan2span2 = Backgrid.HeaderCell.extend({
-	tagName: "th colspan=\"2\" class=\"span2\"",
+var headerLabel = Backgrid.HeaderCell.extend({
+	tagName: "th class=\"span1 tip\" data-toggle=\"tooltip\" id=\"tipLabel\" data-original-title=\"" + $.t("table.tipLabel") + "\"",
+	render: function () {
+		this.$el.empty();
+		var $label = this.column.get("label");
+		this.$el.text($label);
+		this.delegateEvents();
+		return this;
+	}
+});
+
+var headerName = Backgrid.HeaderCell.extend({
+	tagName: "th class=\"span1 tip\" data-toggle=\"tooltip\" id=\"tipName\" data-original-title=\"" + $.t("table.tipName") + "\"",
 	render: function () {
 		this.$el.empty();
 		var $label = this.column.get("label");
@@ -231,16 +242,16 @@ Backgrid.HoverBoolCell = Backgrid.BooleanCell.extend({
 
 var columns = [{
 	name: "label",
-	label: $.t("table.param"),
+	label: $.t("table.label"),
 	cell: "string",
 	sortable: false,
-	headerCell: colspan2span2
+	headerCell: headerLabel
 }, {
 	name: "param",
-	label: "",
+	label: $.t("table.name"),
 	cell: "aliases",
 	sortable: false,
-	headerCell: hidden
+	headerCell: headerName
 }, {
 	name: "desc",
 	label: $.t("table.desc"),
@@ -299,8 +310,14 @@ var grid = new Backgrid.Grid({
 	footer: AddFooter
 });
 
-// Render the grid and attach the root to your HTML document
-$("#params").append(grid.render().$el);
+$(document).ready(function() {
+	// Render the grid and attach the root to your HTML document
+	$("#params").append(grid.render().$el);
+	$(".tip").tooltip({
+		container: '.table-editable',
+		placement: 'top'
+	});
+});
 
 // Akcje
 function addRow() {

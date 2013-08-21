@@ -9,7 +9,7 @@
 		"desc": "Descripción de la plantilla"
 	},
 	"table": {
-		"param": "Parámetro",
+		"name": "Nombre",
 		"desc": "Descripción",
 		"type": "Tipo",
 		"default": "Defecto",

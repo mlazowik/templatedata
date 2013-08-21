@@ -9,7 +9,10 @@
 		"desc": "opis szablonu"
 	},
 	"table": {
-		"param": "Parametr",
+		"label": "Etykieta",
+		"tipLabel": "To zobaczy użytkownik",
+		"name": "Nazwa",
+		"tipName": "Właściwa nazwa",
 		"desc": "Opis",
 		"type": "Typ",
 		"default": "Domyślnie",

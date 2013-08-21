@@ -9,7 +9,7 @@
 		"desc": "description du modèle"
 	},
 	"table": {
-		"param": "Paramètre",
+		"name": "Nom",
 		"desc": "Description",
 		"type": "Type",
 		"default": "Valeur par défaut",

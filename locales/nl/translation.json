@@ -9,7 +9,7 @@
 		"desc": "omschrijving van sjabloon"
 	},
 	"table": {
-		"param": "Parameter",
+		"name": "Naam",
 		"desc": "Omschrijving",
 		"type": "Type",
 		"default": "Standaard",

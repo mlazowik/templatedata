@@ -9,7 +9,10 @@
 		"desc": "template description"
 	},
 	"table": {
-		"param": "Parameter",
+		"label": "Label",
+		"tipLabel": "What the user will see",
+		"name": "Name",
+		"tipName": "Actual name",
 		"desc": "Description",
 		"type": "Type",
 		"default": "Default",

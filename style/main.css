@@ -29,3 +29,7 @@ textarea.input-block-level {
 	text-align: center;
 	margin-top: 0;
 }
+
+.table-editable {
+	margin-top: 20px;
+}
