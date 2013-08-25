@@ -391,7 +391,7 @@ function templatedata(collection, description) {
 
 	data.params = params;
 
-	$("#templatedata").text( "<templatedata>\n" + JSON.stringify( data, null, "\t" ) + "\n</templatedata>" );
+	$("#templatedata").text( "==TemplateData==\n{{TemplateDataHeader}}\n<templatedata>\n" + JSON.stringify( data, null, "\t" ) + "\n</templatedata>" );
 }
 
 /* import existing templatedata */
