@@ -398,7 +398,9 @@ function templatedata(collection, description) {
 
 function importData(input) {
 	try {
-		var data = $.parseJSON( input );
+		var data = input.replace(/^\s*<templatedata(?:\s.*?)?>/i, '')
+				.replace(/\s*<\/templatedata\s*>\s*$/i, '');
+		data = $.parseJSON( data );
 	} catch (err) {
 		return;
 	}
