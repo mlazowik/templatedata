@@ -400,7 +400,6 @@ function importData(input) {
 	try {
 		var data = input.replace(/^\s*<templatedata(?:\s.*?)?>/i, '')
 				.replace(/<\/templatedata\s*>\s*$/i, '')
-				.replace(/^\s+|\s+$/g, '');
 		data = $.parseJSON( data );
 	} catch (err) {
 		return;
@@ -466,14 +465,21 @@ $(document).ready( function() {
 	// validate json input
 	$("#import, #import-replace").find("textarea").keyup( function() {
 		try {
-			var data = $.parseJSON( $(this).val() );
+			var data = $(this).val().replace(/^\s*<templatedata(?:\s.*?)?>/i, '')
+				.replace(/<\/templatedata\s*>\s*$/i, '')
+			
+			data = $.parseJSON( data );
+			
 			$(this).closest(".control-group").removeClass("error");
 			$(".help-inline").text("");
 			$(this).closest("form").find('button[type="submit"]').removeAttr("disabled");
+		
 		} catch (err) {
+		
 			$(this).closest(".control-group").addClass("error");
 			$(this).parent().children(".help-inline").text( err );
 			$(this).closest("form").find('button[type="submit"]').attr("disabled", "disabled");
+		
 		}
 	} );
 
