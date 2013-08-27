@@ -24,7 +24,7 @@ $page = 'templatedata';
 						<div class="span10 offset1">
 							<div dir="ltr" lang="en" class="alert alert-info">
 								<button type="button" class="close" data-dismiss="alert">&times;</button>
-								Added an option to import existing data \o/ Still looking for translations. More information <a href="#translate-info">in the bottom of the page</a>.
+								Looking for translations. More information <a href="#translate-info">in the bottom of the page</a>.
 							</div>
 
 							<div id="lang-box">
