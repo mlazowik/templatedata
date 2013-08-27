@@ -399,7 +399,7 @@ function templatedata(collection, description) {
 function importData(input) {
 	try {
 		var data = input.replace(/^\s*<templatedata(?:\s.*?)?>/i, '')
-				.replace(/<\/templatedata\s*>\s*$/i, '')
+				.replace(/<\/templatedata\s*>\s*$/i, '');
 		data = $.parseJSON( data );
 	} catch (err) {
 		return;
@@ -466,7 +466,7 @@ $(document).ready( function() {
 	$("#import, #import-replace").find("textarea").keyup( function() {
 		try {
 			var data = $(this).val().replace(/^\s*<templatedata(?:\s.*?)?>/i, '')
-				.replace(/<\/templatedata\s*>\s*$/i, '')
+				.replace(/<\/templatedata\s*>\s*$/i, '');
 			
 			data = $.parseJSON( data );
 			
