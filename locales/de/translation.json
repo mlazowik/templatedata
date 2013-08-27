@@ -1,0 +1,42 @@
+{
+	"headers": {
+		"page": "TemplateData Editor",
+		"desc": "Beschreibung",
+		"params": "Parameter",
+		"result": "Ergebnis"
+	},
+	"placeholders": {
+		"desc": "Vorlagenbeschreibung"
+	},
+	"table": {
+		"label": "Label",
+		"tipLabel": "Was dem Benutzer angezeigt wird",
+		"name": "Name",
+		"tipName": "Tatsächlicher Name",
+		"desc": "Beschreibung",
+		"type": "Typ",
+		"default": "Standard",
+		"required": "Benötigt",
+		"actions": "Aktionen",
+		"add": "Hinzufügen",
+		"import": "Importieren",
+		"import-append": "Anfügen",
+		"import-replace": "Ersetzen",
+		"import-info": "Füge hier die bereits vorhandenen TemplateData ein, aber ohne <code>&lttemplatedata&gt</code> <code>&lt/templatedata&gt</code>. Diese werden an das Ende der Tabelle angefügt",
+		"import-info-replace": "Füge hier die bereits vorhandenen TemplateData ein, aber ohne <code>&lttemplatedata&gt</code> <code>&lt/templatedata&gt</code>. <strong>Diese werden alle Tabellendaten ersetzen!</strong>",
+		"dup": "Duplizieren",
+		"dup-below": "darunter",
+		"dup-end": "an das Ende",
+		"del": "Löschen",
+		"param-name-header": "Name <small>/ Aliasnamen</small>",
+		"param-name-help": "Gib die Parameternamen in separaten Zeilen ein. Der Erste wird zum Hauptparameternamen, die Folgenden zu Aliasnamen.",
+		"save": "Speichern",
+		"cancel": "Abbrechen",
+		"type-unknown": "unbekannt",
+		"type-number": "Zahl",
+		"type-string": "Zeichenkette",
+		"type-user": "Benutzername",
+		"type-page": "Seite",
+		"empty-placeholder": "leer"
+	}
+}

@@ -29,6 +29,7 @@ $page = 'templatedata';
 
 							<div id="lang-box">
 								<select id="lang-select">
+									<option value="de">Deutsch</option>
 									<option value="en">English</option>
 									<option value="es">Español</options>
 									<option value="fr">Français</option>
@@ -119,6 +120,7 @@ $page = 'templatedata';
 									<li>French (Français): <a href="https://en.wikipedia.org/wiki/User:Rastus_Vernon">Rastus Vernon</a></li>
 									<li>Hebrew (עברית): Eran Roz (<a href="https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%AA%D7%9E%D7%A9:%D7%A2%D7%A8%D7%9F">ערן</a>)</li>
 									<li>Spanish (Español): <a href="https://pt.wikipedia.org/wiki/Usu%C3%A1rio:F%C3%BAlvio">Fúlvio</a></li>
+									<li>German (Deutsch): Rillke</li>
 								</ul>
 							</section>
 						</div>
