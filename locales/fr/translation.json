@@ -1,22 +1,30 @@
 {
 	"headers": {
 		"page": "Éditeur TemplateData",
-			"desc": "Description",
-			"params": "Paramètres",
-			"result": "Résultat"
+		"desc": "Description",
+		"params": "Paramètres",
+		"result": "Résultat"
 	},
 	"placeholders": {
 		"desc": "description du modèle"
 	},
 	"table": {
+		"label": "Étiquette",
+		"tipLabel": "Ce que l'utilisateur verra",
 		"name": "Nom",
+		"tipName": "Nom réel",
 		"desc": "Description",
 		"type": "Type",
 		"default": "Valeur par défaut",
 		"required": "Requis",
 		"actions": "Actions",
 		"add": "Ajouter",
-		"dup": "Doublon",
+		"import": "Importer",
+		"import-append": "Adjoindre",
+		"import-replace": "Remplacer",
+		"import-info": "Collez le code TemplateData existant ici. Il sera ajouté à la fin du tableau.",
+		"import-info-replace": "Collez le code TemplateData existant ici. <strong>Il remplacera tout le contenu du tableau.</strong>",
+		"dup": "Doubler",
 		"dup-below": "En dessous",
 		"dup-end": "À la fin",
 		"del": "Supprimer",
@@ -26,7 +34,7 @@
 		"cancel": "Annuler",
 		"type-unknown": "indéfini",
 		"type-number": "nombre",
-		"type-string": "chaîne de caractère",
+		"type-string": "chaîne de caractères",
 		"type-user": "utilisateur",
 		"type-page": "page",
 		"empty-placeholder": "vide"
