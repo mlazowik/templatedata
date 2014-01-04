@@ -1,0 +1,42 @@
+{
+	"headers": {
+		"page": "Editor di TemplateData",
+		"desc": "Descrizione",
+		"params": "Parametri",
+		"result": "Risultato"
+	},
+	"placeholders": {
+		"desc": "Descrizione template"
+	},
+	"table": {
+		"label": "Etichetta",
+		"tipLabel": "Ciò che l'utente vede",
+		"name": "Nome",
+		"tipName": "Nome attuale",
+		"desc": "Descrizione",
+		"type": "Tipo",
+		"default": "Default",
+		"required": "Obbligatorio",
+		"actions": "Azioni",
+		"add": "Aggiungi",
+		"import": "Importa",
+		"import-append": "Aggiungi",
+		"import-replace": "Sostituisci",
+		"import-info": "Incolla qui il TemplateData esistente. Sarà aggiunto alla fine della lista",
+		"import-info-replace": "Incolla qui il TemplateData esistente. <strong>Sostituirà tutti i dati della lista!</strong>",
+		"dup": "Duplica",
+		"dup-below": "Sotto",
+		"dup-end": "Alla fine",
+		"del": "Cancella",
+		"param-name-header": "Nome <small>/ alias</small>",
+		"param-name-help": "Immetti i nomi dei parametri in linee separate. Il primo sarà quello principale, gli altri saranno alias.",
+		"save": "Salva",
+		"cancel": "Annulla",
+		"type-unknown": "Non definito",
+		"type-number": "Numero",
+		"type-string": "Stringa",
+		"type-user": "Utente",
+		"type-page": "Pagina",
+		"empty-placeholder": "Vuoto"
+	}
+}
