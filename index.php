@@ -141,7 +141,7 @@ $page = 'templatedata';
 								<hr>
 								<p>Stworzone (<a target="_blank" href="https://github.com/mlazowik/templatedata">github</a>) przez <a target="_blank" href="https://pl.wikipedia.org/wiki/Wikipedysta:Lazowik">mlazowik</a> za pomocą:</p>
 								<a target="_blank" href="http://backgridjs.com/">Backgrid.js</a>
-								· <a target="_blank" href="http://twitter.github.io/bootstrap/">Bootstrap</a>
+								· <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>
 								· <a target="_blank" href="http://jquery.com/">jQuery</a>
 								· <a target="_blank" href="http://i18next.com">i18next</a>
 							</div>
