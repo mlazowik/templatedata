@@ -34,6 +34,7 @@ $page = 'templatedata';
 									<option value="es">Español</options>
 									<option value="fr">Français</option>
 									<option value="he">עברית</option>
+									<option value="it">Italiano</option>
 									<option value="nl">Nederlands</option>
 									<option value="pl">Polski</option>
 									<option value="pt">Português</option>
