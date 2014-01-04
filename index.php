@@ -122,6 +122,7 @@ $page = 'templatedata';
 									<li>Hebrew (עברית): Eran Roz (<a href="https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%AA%D7%9E%D7%A9:%D7%A2%D7%A8%D7%9F">ערן</a>)</li>
 									<li>Spanish (Español): <a href="https://pt.wikipedia.org/wiki/Usu%C3%A1rio:F%C3%BAlvio">Fúlvio</a></li>
 									<li>German (Deutsch): <a href="https://commons.wikimedia.org/wiki/User:Rillke">Rillke</a></li>
+									<li>Italian (Italiano): <a href="https://it.wikipedia.org/wiki/Utente:Kitt97">Kitt97</a></li>
 								</ul>
 							</section>
 						</div>
