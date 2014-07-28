@@ -1,0 +1,42 @@
+{
+	"headers": {
+		"page": "TemplateData-redigeraren",
+		"desc": "Beskrivning",
+		"params": "Parameters",
+		"result": "Result"
+	},
+	"placeholders": {
+		"desc": "en beskrivning av mallen"
+	},
+	"table": {
+		"label": "Etikett",
+		"tipLabel": "Det användaren kommer att se (t.ex. Tennis)",
+		"name": "Namn",
+		"tipName": "Parameterns egentliga namn (t.ex. boll-tennis)",
+		"desc": "Beskrivning",
+		"type": "Typ",
+		"default": "Standard",
+		"required": "Obligatorisk",
+		"actions": "Åtgärder",
+		"add": "Lägg till",
+		"import": "Importera",
+		"import-append": "Bifoga",
+		"import-replace": "Ersätt",
+		"import-info": "Klistra in din TemplateData-kod här. Den kommer att bifogas längst ner i tabellen.",
+		"import-info-replace": "Klistra in din TemplateData-kod här. <strong>Obs! Den kommer att ersätta all annan data i tabellen!</strong>",
+		"dup": "Duplicera",
+		"dup-below": "Direkt nedanför",
+		"dup-end": "Sist",
+		"del": "Ta bort",
+		"param-name-header": "Namn <small>/ alternativa namn</small>",
+		"param-name-help": "Ange ett parameternamn per rad. Det översta blir huvudnamnet för parametern, de övriga blir alternativa namn.",
+		"save": "Spara",
+		"cancel": "Avbryt",
+		"type-unknown": "odefinierad",
+		"type-number": "nummer",
+		"type-string": "sträng",
+		"type-user": "användare",
+		"type-page": "sida",
+		"empty-placeholder": "tom"
+	}
+}

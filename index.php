@@ -38,6 +38,7 @@ $page = 'templatedata';
 									<option value="nl">Nederlands</option>
 									<option value="pl">Polski</option>
 									<option value="pt">Português</option>
+									<option value="sv">Svenska</option>
 								</select>
 								<p lang="en" dir="ltr" class="translate-help"><small><a href="#translate-info">Want to help with translating?</a></small></p>
 							</div>
@@ -123,6 +124,7 @@ $page = 'templatedata';
 									<li>Spanish (Español): <a href="https://pt.wikipedia.org/wiki/Usu%C3%A1rio:F%C3%BAlvio">Fúlvio</a></li>
 									<li>German (Deutsch): <a href="https://commons.wikimedia.org/wiki/User:Rillke">Rillke</a></li>
 									<li>Italian (Italiano): <a href="https://it.wikipedia.org/wiki/Utente:Kitt97">Kitt97</a></li>
+									<li>Swedish (Svenska): Mikael Hiort af Ornäs (<a href="https://sv.wikipedia.org/wiki/Användare:Lakrits">Lakrits</a>)</li>
 								</ul>
 							</section>
 						</div>
