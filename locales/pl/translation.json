@@ -35,8 +35,12 @@
 		"type-unknown": "nieokreślony",
 		"type-number": "liczba",
 		"type-string": "tekst",
-		"type-user": "użytkownik",
+		"type-line": "krótki, jednolinijkowy tekst",
 		"type-page": "strona",
+		"type-file": "plik (Foo.jpg, nie Plik:Foo.jpg)",
+		"type-user": "użytkownik",
+		"type-wikitext": "wikitekst",
+		"type-wikitext-unbalanced": "wikitekst niesamodzielny (np. część całości)",
 		"empty-placeholder": "pusty"
 	}
 }

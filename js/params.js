@@ -229,8 +229,12 @@ Backgrid.EmUnknownCell = Backgrid.SelectCell.extend({
 		[$.t("table.type-unknown"), "unknown"],
 		[$.t("table.type-number"), "number"],
 		[$.t("table.type-string"), "string"],
+		[$.t("table.type-line"), "line"],
+		[$.t("table.type-page"), "string/wiki-page-name"],
+		[$.t("table.type-file"), "string/wiki-file-name"],
 		[$.t("table.type-user"), "string/wiki-user-name"],
-		[$.t("table.type-page"), "string/wiki-page-name"]
+		[$.t("table.type-wikitext"), "content"],
+		[$.t("table.type-wikitext-unbalanced"), "content"],
 	]
 });
 

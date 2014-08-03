@@ -34,9 +34,13 @@
 		"cancel": "Cancel",
 		"type-unknown": "undefined",
 		"type-number": "number",
-		"type-string": "string",
-		"type-user": "user",
+		"type-string": "text",
+		"type-line": "short text (1 line)",
 		"type-page": "page",
+		"type-file": "file (Foo.jpg, not File:Foo.jpg)",
+		"type-user": "user",
+		"type-wikitext": "wikitext",
+		"type-wikitext-unbalanced": "non-standalone wikitext (e.g. part of whole)",
 		"empty-placeholder": "empty"
 	}
 }
