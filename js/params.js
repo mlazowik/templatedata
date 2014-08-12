@@ -281,6 +281,18 @@ var columns = [{
 	sortable: false,
 	headerCell: span1
 }, {
+	name: "suggested",
+	label: $.t("table.suggested"),
+	cell: "hoverBool",
+	sortable: false,
+	headerCell: span1
+}, {
+	name: "deprecated",
+	label: $.t("table.deprecated"),
+	cell: "hoverBool",
+	sortable: false,
+	headerCell: span1
+}, {
 	name: "dup",
 	label: $.t("table.actions"),
 	cell: "duplicate",
@@ -299,7 +311,7 @@ var columns = [{
 var AddFooter = Backgrid.Footer.extend({
 	render: function () {
 		this.$el.empty();
-		this.$el.html('<tr><td colspan="8"><button class="btn btn-primary" data-add>' + $.t("table.add") + '</button> <div class="btn-group"><button data-toggle="modal" data-target="#import" class="btn btn-info">' + $.t("table.import") + '</button><button class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button><ul class="dropdown-menu"><li><a href="#import" data-toggle="modal">' + $.t("table.import-append") + '</a></li><li><a href="#import-replace" data-toggle="modal">' + $.t("table.import-replace") + '</a></li></ul></div></td></tr>');
+		this.$el.html('<tr><td colspan="10"><button class="btn btn-primary" data-add>' + $.t("table.add") + '</button> <div class="btn-group"><button data-toggle="modal" data-target="#import" class="btn btn-info">' + $.t("table.import") + '</button><button class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button><ul class="dropdown-menu"><li><a href="#import" data-toggle="modal">' + $.t("table.import-append") + '</a></li><li><a href="#import-replace" data-toggle="modal">' + $.t("table.import-replace") + '</a></li></ul></div></td></tr>');
 		this.$el.find("[data-add]").click(addRow);
 		this.delegateEvents();
 		return this;
@@ -331,7 +343,9 @@ function addRow() {
 		"desc": "",
 		"type": "string",
 		"default": "",
-		"required": false
+		"required": false,
+		"suggested": false,
+		"deprecated": false
 	}]);
 
 	templatedata(params, $("#desc").val());
@@ -371,6 +385,8 @@ function templatedata(collection, description) {
 			label: mParam.get("label"),
 			type: mParam.get("type"),
 			required: mParam.get("required"),
+			suggested: mParam.get("suggested"),
+			deprecated: mParam.get("deprecated"),
 			description: mParam.get("desc")
 		};
 
@@ -424,7 +440,9 @@ function importData(input) {
 				"desc": "",
 				"type": "string",
 				"default": "",
-				"required": false
+				"required": false,
+				"suggested": false,
+				"deprecated": false
 			};
 
 			model.param = name;
@@ -440,7 +458,9 @@ function importData(input) {
 				"desc": "description",
 				"type": "type",
 				"default": "default",
-				"required": "required"
+				"required": "required",
+				"suggested": "suggested",
+				"deprecated": "deprecated"
 				},
 				function(m, j) {
 					if ( param[j] != null ) {

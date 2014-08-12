@@ -17,6 +17,8 @@
 		"type": "Typ",
 		"default": "Domyślnie",
 		"required": "Wymagany",
+		"suggested": "Sugerowany",
+		"deprecated": "Wycofywany",
 		"actions": "Akcje",
 		"add": "Dodaj",
 		"import": "Importuj",

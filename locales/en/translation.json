@@ -17,6 +17,8 @@
 		"type": "Type",
 		"default": "Default",
 		"required": "Required",
+		"suggested": "Suggested",
+		"deprecated": "Deprecated",
 		"actions": "Actions",
 		"add": "Add",
 		"import": "Import",
