@@ -4,8 +4,8 @@ $page = 'templatedata';
 ?>
 		<link rel="stylesheet" href="style/backgrid.min.css" />
 		<link rel="stylesheet" href="style/backgrid-text-cell.min.css" />
-		<link rel="stylesheet" href="style/main.css" />
-		<link rel="stylesheet" href="style/table.css" />
+		<link rel="stylesheet" href="style/main.css?v=1" />
+		<link rel="stylesheet" href="style/table.css?v=1" />
 
 		<title>TemplateData</title>
 	</head>
@@ -159,11 +159,11 @@ $page = 'templatedata';
 		require '../js.php';
 		?>
 		<script type="text/javascript" src="js/i18next.min.js"></script>
-		<script type="text/javascript" src="js/locale.js"></script>
+		<script type="text/javascript" src="js/locale.js?v=1"></script>
 		<script type="text/javascript" src="js/underscore.js"></script>
 		<script type="text/javascript" src="js/backbone.js"></script>
 		<script type="text/javascript" src="js/backgrid.min.js"></script>
 		<script type="text/javascript" src="js/backgrid-text-cell.min.js"></script>
-		<script type="text/javascript" src="js/params.js"></script>
+		<script type="text/javascript" src="js/params.js?v=1"></script>
 	</body>
 </html>
