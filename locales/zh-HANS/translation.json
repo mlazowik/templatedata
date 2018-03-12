@@ -1,0 +1,48 @@
+{
+    "headers": {
+        "page": "模板数据编辑器",
+        "desc": "描述",
+        "params": "参数",
+        "result": "结果"
+    },
+    "placeholders": {
+        "desc": "模板描述"
+    },
+    "table": {
+        "label": "标签",
+        "tipLabel": "用户会看到的名称",
+        "name": "名称",
+        "tipName": "真实名称",
+        "desc": "描述",
+        "type": "种类",
+        "default": "预设内容",
+        "required": "必选",
+        "suggested": "推荐",
+        "deprecated": "弃用",
+        "actions": "操作",
+        "add": "添加",
+        "import": "导入",
+        "import-append": "附加",
+        "import-replace": "替换",
+        "import-info": "将存在的模板数据粘贴到这里。它们会被附加到表格的最后。",
+        "import-info-replace": "将存在的模板数据粘贴到这里。<strong>它们将会替换表格的所有数据！</strong>",
+        "dup": "复制",
+        "dup-below": "下方",
+        "dup-end": "最后",
+        "del": "删除",
+        "param-name-header": "名称 <small>/ 代称</small>",
+        "param-name-help": "将参数名称分行输入。首个会成为主要名称，剩下的则会成为代称。",
+        "save": "保存",
+        "cancel": "取消",
+        "type-unknown": "不明确",
+        "type-number": "数字",
+        "type-string": "文字",
+        "type-line": "短文（1行）",
+        "type-page": "条目页面",
+        "type-file": "文件（Foo.jpg，而非File:Foo.jpg）",
+        "type-user": "用户名",
+        "type-wikitext": "维基语法",
+        "type-wikitext-unbalanced": "不完整的原始維基語法（例如只有整体的一部分）",
+        "empty-placeholder": "空白"
+    }
+}

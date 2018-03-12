@@ -31,9 +31,9 @@ $.i18n.init( options, function(t) {
 	$("body").i18n();
 	$("#desc").attr( "placeholder", t("placeholders.desc") );
 
-	var lang = $.i18n.lng().split("-");
-	$("#lang-select").val( lang[0] );
-	$("html").attr( "lang", lang[0] );
+	var lang = $.i18n.lng();
+	$("#lang-select").val( lang );
+	$("html").attr( "lang", lang );
 
 	var rtl_langs = [
 		"ar",
@@ -50,7 +50,7 @@ $.i18n.init( options, function(t) {
 		"yi"
 	];
 
-	if ( $.inArray( lang[0], rtl_langs ) >= 0 ) {
+	if ( $.inArray( lang, rtl_langs ) >= 0 ) {
 		rtl();
 	}
 

@@ -1,3 +1,11 @@
+.table-editable th {
+    white-space: nowrap;
+}
+
+.table-editable button {
+    white-space: nowrap;
+}
+
 .table-editable td.editor,
 .table-editable tbody tr:nth-child(odd) td.editor {
   background-color: rgba(82, 168, 236, 0.1);
